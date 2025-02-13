@@ -3596,6 +3596,7 @@ textarea.form-control {
     border-top: 0; }
 
 .card-body {
+  cursor: pointer;
   flex: 1 1 auto;
   padding: 1rem 1rem; }
 
@@ -6165,16 +6166,16 @@ textarea.form-control {
 
 .bg-success {
   --bs-bg-opacity: 1;
-  background: linear-gradient(to right, rgb(127, 0, 255), rgb(225, 0, 255));
+  background: linear-gradient(to right, #DDB249, #E54D24);
 }
 
 .bg-info {
   --bs-bg-opacity: 1;
-  background: linear-gradient(to right, rgb(142, 45, 226), rgb(74, 0, 224)); }
+  background: linear-gradient(to right, #52E5E7, #130CB7); }
 
 .bg-warning {
   --bs-bg-opacity: 1;
-  background: linear-gradient(to right, rgb(142, 45, 226), rgb(74, 0, 224));
+  background: linear-gradient(to right, #B7D7C9, #04616E );
 }
 
 .bg-danger {
@@ -8199,7 +8200,7 @@ a {
 .w-space-no {
   white-space: nowrap; }
 
-.content-body .container {
+.content-body .containerr {
   margin-top: 40px; }
 
 .content-body .container-fluid, .content-body .container-sm, .content-body .container-md, .content-body .container-lg, .content-body .container-xl, .content-body .container-xxl {
@@ -27200,7 +27201,12 @@ table.dataTable.display tbody td {
   cursor: pointer;
   margin: -25px -15px; }
 
+.invoice-card-row > div:hover {
+  transform: scale(1.05);
+}
+
 .invoice-card-row .invoice-card {
+  cursor: pointer;
   overflow: hidden;
   position: relative; }
   .invoice-card-row .invoice-card .icon {
@@ -27209,7 +27215,7 @@ table.dataTable.display tbody td {
     min-width: 60px;
     line-height: 54px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255);
     text-align: center; }
     @media only screen and (min-width: 1200px) and (max-width: 1600px) {
       .invoice-card-row .invoice-card .icon {
